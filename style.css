@@ -1,0 +1,136 @@
+* {
+  margin:0;
+}
+
+body {
+  color: #222;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  font-family: 'Abril Fatface', cursive;
+  position: relative;
+  line-height: 0;
+  margin-bottom: 65px;
+}
+
+header p {
+  position: absolute;
+  left: 22.7%;
+  bottom: 12%;
+  font-size: 36px;
+  line-height: 1;
+}
+header p span {
+  font-size: 72px;
+}
+
+main {
+  margin: 0 241px;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+/* section = h1 + one or more sub-header+content (does NOT include blockquote-s) */
+main section {
+  padding-left: 43px;
+  padding-right: 43px;
+  margin-bottom: 53px;
+}
+
+main section p {
+    line-height:1.5;
+}
+
+section.intro {
+  line-height: 1.5;
+  font-size: 19px;
+  font-weight: 300;
+  margin-bottom: 66px;
+}
+
+section.achievements h2
+{
+  margin-bottom: 24px;
+}
+
+section.achievements p
+{
+  margin-bottom: 46px;  
+}
+
+blockquote {
+  font-family: 'Abril Fatface', cursive;
+  background: #444444;
+  color: white;
+  font-size: 48px;
+  line-height: 1.5;
+  
+  /* 1 pixel shadow around the white letters */
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  
+  height: 240px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 48px;
+}
+
+blockquote.b1 {
+  height: 168px;
+}
+
+blockquote::before {
+  content: '“';
+  color: white;
+  font-size: 140px;
+  line-height: 1;  /* bounding box has 140px height = font-size, in order to be able to position double quote easier */
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+h1, h2, main p, ul {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+ul {
+  line-height: 1.3;
+  margin: 10px 0 45px 0;
+  list-style-type: square;
+  padding-left: 36px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 21px;
+  margin-top: 58px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+h3 { /* subtitles in the Experience section */
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* black divider line before "Personal Interests" */
+hr { 
+  height: 4px;
+  border-width: 0px;
+  background: black;
+  margin-left: 32px;
+  margin-right: 32px;
+}
